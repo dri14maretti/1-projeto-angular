@@ -1,3 +1,7 @@
 <jad-header></jad-header>
-
-<jad-student *ngFor="let student of students" [student]="student"></jad-student>
+<jad-student
+	(eventoDeletar)="deleteJedi($event)"
+	*ngFor="let student of students"
+	[student]="student"
+></jad-student>
+<jad-add-jedi (eventoAdicionar)="addJedi($event)"></jad-add-jedi>

@@ -1,0 +1,11 @@
+<h4>Add new Jedi</h4>
+<textarea #jediName></textarea>
+<div class="check">
+	<label for="isJedi">isJedi</label>
+	<input type="checkbox" #isJedi />
+</div>
+<a href="#" (click)="clear(jediName, isJedi)"
+	><button (click)="enviarEventoAdd(jediName.value, isJedi.checked)">
+		Send!
+	</button></a
+>

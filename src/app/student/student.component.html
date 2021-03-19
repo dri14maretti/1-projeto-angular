@@ -1,5 +1,6 @@
 <div *ngIf="student">
 	Student: <a href="#" (click)="clicked()">{{ student?.name }}</a>
+	<button class="delete-btn" (click)="deleteFunc()">Delete</button>
 
 	<div *ngIf="student?.isJedi">
 		Jedi Temple: {{ student?.temple }}
